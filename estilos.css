@@ -1,0 +1,130 @@
+@charset "UTF-8";
+
+head {
+  npm i bootstrap-icons
+}
+
+header {}
+
+.contenedor-img {
+  position: relative; /* referencia */
+  width: 100%;
+}
+
+.contenedor-img img {
+  width: 100%;
+  display: block;
+}
+
+.titulo {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: "Playfair Display", serif;
+  color: white;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.logo{
+  position: relative; 
+  max-width: 300px; 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);  
+}
+
+.contenedor-cards {
+  display: flex;
+  gap: 20px;       /* espacio entre cards */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Playfair Display", serif;
+  background: #f2f2f2;
+}
+
+/* SECCIÓN HERO */
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  padding: 80px;
+  align-items: center;
+}
+
+.hero-card {
+  background: #dfe6d6;
+  padding: 60px;
+  border-radius: 30px;
+}
+
+.hero-card h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero-card p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.hero-card button {
+  padding: 12px 30px;
+  border-radius: 30px;
+  border: none;
+  background: #3e5b52;
+  color: white;
+  cursor: pointer;
+}
+
+.hero-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 30px;
+}
+
+/* SECCIÓN FONDO COMPLETO */
+.full-bg {
+  height: 80vh;
+  background: url("bosque.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.full-content {
+  text-align: center;
+  color: white;
+  max-width: 700px;
+}
+
+.full-content h2 {
+  font-size: 2.2rem;
+  margin-bottom: 30px;
+}
+
+.full-content button {
+  padding: 12px 35px;
+  border-radius: 30px;
+  border: none;
+  background: #e4ebdc;
+  cursor: pointer;
+}
+
+/* INVERTIR ORDEN */
+.invertido {
+  grid-template-columns: 1fr 1fr;
+}
+
+/* integrantes*/
